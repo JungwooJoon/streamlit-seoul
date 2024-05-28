@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 import geopandas as gpd
+import os
 
 import matplotlib.pyplot as plt
 import plotly.express as px
@@ -8,8 +9,8 @@ import plotly.express as px
 import matplotlib.font_manager as fm
 
 def mapMatplotlib(merge_df):
-    path = r'C:\Windows\Fonts\NanumGothic.TTF'
-    fontprop = fm.FontProperties(fname=path, size=12)
+    fpath = os.path.join(os.getcwd(), "NanumFont/NanumGothic.ttf")
+    fontprop = fm.FontProperties(fname=fpath, size=12)
 
     fig, ax = plt.subplots(ncols=2, sharey=True, figsize=(15, 10))
 
