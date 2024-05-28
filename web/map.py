@@ -9,7 +9,7 @@ import plotly.express as px
 import matplotlib.font_manager as fm
 
 def mapMatplotlib(merge_df):
-    fpath = os.path.join(os.getcwd(), "../NanumFont/NanumGothic.ttf")
+    fpath = os.path.join(os.getcwd(), "NanumFont/NanumGothic.ttf")
     fontprop = fm.FontProperties(fname=fpath, size=12)
 
     fig, ax = plt.subplots(ncols=2, sharey=True, figsize=(15, 10))
