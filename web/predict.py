@@ -1,13 +1,14 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import streamlit as st
+import os
 from prophet import Prophet
 import numpy as np
 import matplotlib.font_manager as fm
 
 def home_predict(total_df):
-    path = 'C:\Windows\Fonts\H2MJRE.TTF'
-    fontprop = fm.FontProperties(fname=path, size=12)
+    fpath = os.path.join(os.getcwd(), "NanumFont/NanumGothic.ttf")
+    fontprop = fm.FontProperties(fname=fpath, size=12)
     
     total_df['DEAL_YMD'] = pd.to_datetime(total_df['DEAL_YMD'], format='%Y-%m-%d')
     types = list(total_df['HOUSE_TYPE'].unique())
