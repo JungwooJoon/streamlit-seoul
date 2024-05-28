@@ -41,8 +41,8 @@ def home_predict(total_df):
     st.pyplot(fig)
     
 def area_predict(total_df):
-    path = 'C:\Windows\Fonts\H2MJRE.TTF'
-    fontprop = fm.FontProperties(fname=path, size=12)
+    fpath = os.path.join(os.getcwd(), "NanumFont/NanumGothic.ttf")
+    fontprop = fm.FontProperties(fname=fpath, size=12)
     
     total_df['DEAL_YMD'] = pd.to_datetime(total_df['DEAL_YMD'], format='%Y-%m-%d')
     
