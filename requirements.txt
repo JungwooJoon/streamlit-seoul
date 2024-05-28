@@ -7,7 +7,6 @@ matplotlib
 seaborn
 plotly
 scikit-learn
-streamlit
 yfinance
 lightgbm
 statsmodels
@@ -15,7 +14,7 @@ streamlit
 geopandas
 folium
 xmltodict
-stream-option-menu
+streamlit-option-menu
 millify
 pingouin
 jupyterlab
