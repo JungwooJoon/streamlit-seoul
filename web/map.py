@@ -31,7 +31,7 @@ def mapMatplotlib(merge_df):
 
 def showMap(total_df):
     st.markdown('### 병합 데이터 확인 \n' "- 컬럼명 확인")
-    seoul_gpd = gpd.read_file('seoul_sig.geojson')
+    seoul_gpd = gpd.read_file('web/seoul_sig.geojson')
     seoul_gpd = seoul_gpd.set_crs(epsg='5178', allow_override=True)
     seoul_gpd = seoul_gpd.set_crs(epsg='5178', allow_override=True)
     seoul_gpd['center_point'] = seoul_gpd['geometry'].geometry.centroid
